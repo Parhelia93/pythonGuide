@@ -1,0 +1,2 @@
+#join method
+''.join([1,2,3]) - retrurn str '123'

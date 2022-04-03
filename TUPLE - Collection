@@ -1,0 +1,16 @@
+#TUPLE - immutable type of date
+a  = (1,3) #Create couple with values
+b = tuple('one', )
+print(b)
+c = tuple(['one','two'])
+print(c)
+v = 1,2
+print(type(v))
+a,b = 10,11
+c,d = '10','11'
+
+a,b = b,a
+
+print(a,b)
+print(v[0])
+print(type(a))

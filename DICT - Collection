@@ -1,0 +1,43 @@
+#DICTIONARY - disordered collection with key acsess
+d = {} #- empty dictionary
+d1 = dict() # Function dict return empty dictionary
+#Add data to dict with literal
+d1 = {'data1':1, 'data2':2}
+print(d1)
+#Add data to dict with func dict()
+d1 = dict(data3=1, data4=4)
+print(d1)
+d2 = dict(a5=[1,2,3])
+print(d2)
+d3=dict([[1,'one'],[2,'two']])# Ini dictionary with 2-d list
+print(d3)
+d4=dict.fromkeys([1,2,3,4],'Spare') #return dict with key from list,
+#and same values
+print(d4)
+d5=dict.fromkeys(['one','two','three'],0)
+print(d5)
+d6 = {a:'Spare' for a in range(7)} #List generator
+print(d6)
+print(d6[1]) #Get value from dict, if key not found raise err KeyErr
+d6.clear() #Remove all values from dictionary
+print(d6)
+d7=d5.copy()#Return copy of dictionary
+print(d7)
+a = d7.get(1) #return value with index pass to get method,
+#but if key not found, exeption not raise, return none
+print(a)
+a1 = d7.items() #return list of couple with pair values: key - value
+print(a1)
+a2 = d7.keys() #return iterable object of collection dict_keys with keys
+print(a2)
+print(type(a2))
+a3 = d7.pop('three') #remove value with passed key and return removed value
+print(a3)
+print(d7)
+a4 = d7.popitem() #remove random value from dict and return pair:key-val
+print(type(a4))
+print(d7)
+d7.update([['two',2],['one',1]])
+print(d7)
+a5 = d7.values()
+print(a5) #return iterable collection with values of dict

@@ -1,0 +1,22 @@
+#LIST - ordered collection
+s_2 = list() #create empty list
+s_2 = [1,'a',67] #Add values to collection
+s_2.append([1,2]) # Add value to end of list
+r = [1,2,3]
+s_2.extend(r) #Extend list s_2 values fron list r. Add values to end of list s_2
+s_2.insert(1,'ab') #Insert
+s_2.remove(1) #Remove first same value from list, if value doesn't exist raise ValueError
+s_2.pop(0) #Fuction remove value with index 0, and return the value of removed value
+print(s_2.index(67,1,7)) #Function return first finded index of pass value. May used start-end index.
+#If value doesn't exist function raise ValueError
+print(s_2.count('a')) #return count of value in list
+print(s_2)
+s_2.reverse() #Func doesn't return new list, working with existance reference
+print(s_2)
+print(s_2[::-1])#Another way to reverse list, return reference to the new list
+
+a = s_2.copy() #Copy list, return reference to the new list
+print(a)
+
+s_2.clear() #Remove all values from list
+print(s_2)

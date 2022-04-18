@@ -1,0 +1,24 @@
+Incapsulation -----------------------
+_attr - protected. Use in class and subclass
+__attr - private. Use only in class
+
+
+Class method-------------------------
+def get_cord(self) - siply method. Init from instance class.Work with class atribute and instance attribute 
+@classmethod - decorator for class method, that works with onle with class attr
+def validate(cls, args) - cls pointer to current class.
+@staticmethod - work with param opred onle in this func
+
+magic method:
+
+__getattribute__(self, item) - work every time, when we try to read local var of instance
+(Запретить доступ к атрибутк)
+
+__setattr__(self, key, value) -  work every time, when we try to write local var of instance
+
+__getattr__(self, item) - work every time, when we try to read local var of instance that doesn't exist
+
+__delattr__(self, item)
+----------------------------------------------
+Propertes-------------------------------------
+
